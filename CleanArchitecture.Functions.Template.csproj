@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<PackageType>Template</PackageType>
+		<PackageId>Clean.Architecture.Functions.Template</PackageId>
+		<Title>Clean Architecture Azure Functions Template</Title>
+		<Description>A dotnet new template bringing Clean Architecture to Azure Functions (.NET 10, isolated worker), built on Platform.Shared.</Description>
+		<PackageTags>dotnet-new;templates;azure-functions;clean-architecture</PackageTags>
+		<IncludeContentInPack>true</IncludeContentInPack>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<ContentTargetFolders>content</ContentTargetFolders>
+		<NoWarn>$(NoWarn);NU5128</NoWarn>
+		<NoDefaultExcludes>true</NoDefaultExcludes>
+		<PackageProjectUrl>https://github.com/wellaya/CleanArchitecture.Functions.Template</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+		<!-- Critical: stop the SDK from auto-compiling .cs files found under content/ -->
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+		<EnableDefaultItems>false</EnableDefaultItems>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="content\**\*"
+				 Exclude="content\**\bin\**;content\**\obj\**"
+				 Pack="true"
+				 PackagePath="content" />
+	</ItemGroup>
+
+</Project>
