@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "YourName",
+  "classifications": [ "Web API", "Azure Functions", "Clean Architecture" ],
+  "identity": "CleanArchitecture.Functions.Template",
+  "name": "Clean Architecture Azure Functions API",
+  "shortName": "ca-func",
+  "sourceName": "CleanArchitecture.Functions",
+  "preferNameDirectory": true
+}

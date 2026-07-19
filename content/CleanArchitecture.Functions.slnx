@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/CleanArchitecture.Functions.Application/CleanArchitecture.Functions.Application.csproj" />
+    <Project Path="src/CleanArchitecture.Functions.Domain/CleanArchitecture.Functions.Domain.csproj" />
+    <Project Path="src/CleanArchitecture.Functions.Functions/CleanArchitecture.Functions.Functions.csproj" />
+    <Project Path="src/CleanArchitecture.Functions.Infrastructure/CleanArchitecture.Functions.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/CleanArchitecture.Functions.Application.UnitTests/CleanArchitecture.Functions.Application.UnitTests.csproj" />
+    <Project Path="tests/CleanArchitecture.Functions.IntegrationTests/CleanArchitecture.Functions.IntegrationTests.csproj" />
+  </Folder>
+</Solution>
