@@ -19,5 +19,6 @@ jobs:
         with: { dotnet-version: '10.0.x' }
       - run: dotnet new install ./content
       - run: dotnet new ca-func -n SmokeTest -o /tmp/SmokeTest
-      - run: dotnet build /tmp/SmokeTest
+      - run: dotnet restore /tmp/SmokeTest --configfile ./content/nuget.config
+      - run: dotnet build /tmp/SmokeTest --no-restore
       - run: dotnet new uninstall ./content
